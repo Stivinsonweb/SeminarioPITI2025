@@ -1,0 +1,72 @@
+/* ==== NAVBAR ==== */
+header.navbar.navbar-expand-lg.custom-navbar {
+  background: transparent !important;
+  backdrop-filter: blur(20px) !important;
+  padding: 1rem 1.5rem !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  min-height: 85px;
+}
+
+header.navbar.navbar-expand-lg.custom-navbar::after {
+  display: none;
+}
+
+.navbar-brand {
+  max-width: 400px;
+}
+
+.brand-text {
+  line-height: 1.0;
+  font-size: 0.75rem;
+}
+
+.brand-text span {
+  font-weight: 600;
+  display: block;
+}
+
+.logo-navbar {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.navbar-nav {
+  gap: 0.5rem;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+  margin: 0;
+}
+
+.nav-link:hover,
+.nav-link-gradient:hover {
+  color: #f7d900 !important;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  display: none;
+}
+
+.custom-toggler {
+  border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  filter: invert(88%) sepia(14%) saturate(500%) hue-rotate(180deg);
+}

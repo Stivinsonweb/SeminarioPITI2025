@@ -1,0 +1,283 @@
+/* ==== EVENTO IMPERDIBLE - DISEÑO MODERNO ==== */
+.evento-imperdible {
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.evento-imperdible::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: -1;
+}
+
+.evento-imperdible::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 1px;
+
+  z-index: -1;
+}
+
+.evento-imperdible h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #0096ff 0%, #00c853 50%, #ffc107 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.evento-imperdible h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #0096ff, #00c853, #ffc107);
+  border-radius: 2px;
+}
+
+.evento-imperdible .lead {
+  font-size: 1.4rem;
+  color: #e9ecef;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+}
+
+/* Grid moderno para los items */
+.evento-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Items modernos con efecto glass */
+.evento-item {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.evento-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.evento-item:hover::before {
+  left: 100%;
+}
+
+.evento-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 150, 255, 0.6) 0%,
+    rgba(0, 200, 83, 0.4) 50%,
+    rgba(255, 193, 7, 0.5) 100%
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.evento-item:hover::after {
+  opacity: 1;
+}
+
+.evento-item:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.6),
+    0 0 30px rgba(0, 150, 255, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Iconos modernos */
+.evento-item i {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  display: inline-block;
+  background: linear-gradient(135deg, #0096ff 0%, #00c853 50%, #ffc107 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  position: relative;
+  z-index: 2;
+}
+
+.evento-item:hover i {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+}
+
+/* Contenedor de icono con fondo */
+.icon-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.icon-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 150, 255, 0.15) 0%,
+    rgba(0, 200, 83, 0.1) 50%,
+    rgba(255, 193, 7, 0.12) 100%
+  );
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.evento-item:hover .icon-container::before {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 150, 255, 0.25) 0%,
+    rgba(0, 200, 83, 0.2) 50%,
+    rgba(255, 193, 7, 0.22) 100%
+  );
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Títulos de items */
+.evento-item h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+
+/* Descripciones opcionales */
+.evento-descripcion {
+  font-size: 0.9rem;
+  color: #e9ecef;
+  margin-top: 10px;
+  opacity: 0.8;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+}
+
+/* Efectos de partículas para items */
+.particulas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particula {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.particula:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.particula:nth-child(2) { top: 60%; left: 80%; animation-delay: 1s; }
+.particula:nth-child(3) { top: 80%; left: 20%; animation-delay: 2s; }
+.particula:nth-child(4) { top: 30%; left: 70%; animation-delay: 3s; }
+.particula:nth-child(5) { top: 70%; left: 30%; animation-delay: 4s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { transform: translateY(-10px) scale(1.2); opacity: 1; }
+}
+
+/* Animaciones de entrada */
+.evento-item {
+  animation: slideUpFade 0.8s ease-out both;
+}
+
+.evento-item:nth-child(1) { animation-delay: 0.1s; }
+.evento-item:nth-child(2) { animation-delay: 0.2s; }
+.evento-item:nth-child(3) { animation-delay: 0.3s; }
+.evento-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -1,0 +1,283 @@
+/* ==== ESTILOS DE FORMULARIOS ==== */
+
+/* Formulario de preinscripción */
+.preinscripcion-section {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9), black 30%, black 70%, rgba(0,0,0,0.9));
+  padding: 4rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.preinscripcion-section h2 {
+  color: #ffc107 !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+/* Botones de selección */
+.form-selector {
+  margin-bottom: 3rem;
+}
+
+.form-selector .btn-group {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-selector .btn {
+  flex: 1;
+  padding: 20px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Botón Participante */
+.btn-outline-primary,
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #ffffff !important;
+  border: 2px solid #007bff;
+}
+
+.btn-outline-primary:hover,
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+/* Botón Exponente */
+.btn-outline-secondary,
+.btn-secondary {
+  background: linear-gradient(135deg, #6c757d, #545862);
+  color: #ffffff !important;
+  border: 2px solid #6c757d;
+}
+
+.btn-outline-secondary:hover,
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #545862, #3d4248);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(108, 117, 125, 0.3);
+}
+
+/* Contenedores de formulario */
+.formulario-container {
+  animation: fadeInUp 0.6s ease-out;
+  margin-top: 2rem;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #6c757d);
+  border-radius: 20px 20px 0 0;
+}
+
+.form-header h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+  color: #212529 !important;
+  font-weight: 700;
+}
+
+/* Campos de formulario */
+.form-label {
+  font-weight: 600;
+  color: #212529 !important;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.form-control, 
+.form-select {
+  border-radius: 10px;
+  border: 2px solid #dee2e6;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212529 !important;
+  background-color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, 
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.form-control::placeholder {
+  color: #6c757d !important;
+  opacity: 1;
+}
+
+/* Checkboxes */
+.form-check-label {
+  color: #212529 !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.125em;
+}
+
+.form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+/* Botón de envío */
+.btn-success {
+  background: linear-gradient(135deg, #198754, #20c997);
+  border: none;
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  color: #ffffff !important;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #157347, #1aa179);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(25, 135, 84, 0.3);
+}
+
+/* Formulario de contacto */
+.contacto-form {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+}
+
+.contacto-form h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  outline: none;
+  border-color: #E18749;
+  box-shadow: 0 0 20px rgba(225, 135, 73, 0.3);
+  background: #fff;
+}
+
+.contacto-form button {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, #E18749, #d47237);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contacto-form button:hover {
+  background: linear-gradient(135deg, #d47237, #b85f2a);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(225, 135, 73, 0.4);
+}
+
+/* Estados de formulario deshabilitado */
+.disabled-form {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.form-deshabilitado fieldset {
+  opacity: 0.6;
+}
+
+/* Responsive para formularios */
+@media (max-width: 768px) {
+  .preinscripcion-section {
+    padding: 3rem 1rem;
+  }
+  
+  .preinscripcion-section h2 {
+    font-size: 2rem;
+  }
+  
+  .form-card {
+    padding: 2rem;
+  }
+  
+  .form-selector .btn {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-card {
+    padding: 1.5rem;
+  }
+  
+  .form-selector .btn-group {
+    flex-direction: column;
+  }
+  
+  .form-selector .btn {
+    border-radius: 8px !important;
+    margin-bottom: 10px;
+  }
+}

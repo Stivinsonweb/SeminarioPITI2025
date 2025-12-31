@@ -1,0 +1,22 @@
+/* ==== IMPORTS ==== */
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/typography.css');
+
+@import url('./components/navbar.css');
+@import url('./components/hero.css');
+@import url('./components/cards.css');
+@import url('./components/buttons.css');
+@import url('./components/countdown.css');
+@import url('./components/footer.css');
+
+
+@import url('./sections/eventos.css');
+@import url('./sections/apoyo.css');
+@import url('./sections/forms.css');
+@import url('./sections/horario.css');
+@import url('./sections/certificado.css');
+@import url('./sections/preinscripcion.css');
+
+@import url('./utilities/responsive.css');
+@import url('./utilities/animations.css');

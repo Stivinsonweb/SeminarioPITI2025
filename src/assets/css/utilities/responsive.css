@@ -1,0 +1,299 @@
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 1200px) {
+  .hero-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .dynamic-text-container {
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .floating-cards-container {
+    flex: 0 0 350px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    max-width: 300px;
+  }
+  
+  .brand-text {
+    font-size: 0.7rem;
+  }
+  
+  .text-gradient {
+    font-size: 1rem;
+  }
+  
+  .logo-navbar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tema-card {
+    width: 280px;
+    flex: 0 0 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.navbar.navbar-expand-lg.custom-navbar {
+    padding: 0.8rem 1rem !important;
+    min-height: 75px;
+  }
+  
+  body {
+    padding-top: 75px;
+  }
+  
+  .navbar-brand {
+    max-width: 250px;
+  }
+  
+  .brand-text {
+    font-size: 0.65rem;
+  }
+  
+  .logo-navbar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .video-section {
+    min-height: 70vh;
+  }
+
+  .video-section .content-box {
+    padding: 1.5rem 1rem;
+    max-width: 95%;
+  }
+
+  .hero-main-title {
+    font-size: 2.5rem;
+  }
+  
+  .typewriter-text {
+    font-size: 3rem;
+  }
+  
+  .typewriter-cursor {
+    font-size: 3rem;
+  }
+  
+  .floating-cards-container {
+    height: 250px;
+    flex: 0 0 300px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .btn-preinscripcion {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .tema-card {
+    width: 250px;
+    flex: 0 0 250px;
+    height: 280px;
+  }
+
+  .temas-grid {
+    gap: 15px;
+  }
+
+  .evento-item {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  header.navbar.navbar-expand-lg.custom-navbar {
+    min-height: 70px;
+  }
+  
+  body {
+    padding-top: 70px;
+  }
+
+  .video-section {
+    min-height: 60vh;
+  }
+
+  .video-section .content-box {
+    padding: 1rem 0.8rem;
+    max-width: 98%;
+  }
+
+  .hero-main-title {
+    font-size: 2rem;
+  }
+  
+  .typewriter-text {
+    font-size: 2.2rem;
+  }
+  
+  .typewriter-cursor {
+    font-size: 2.2rem;
+  }
+  
+  .floating-cards-container {
+    height: 200px;
+    flex: 0 0 250px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .tema-card {
+    width: 100%;
+    max-width: 300px;
+    flex: 0 0 auto;
+    height: 250px;
+  }
+
+  .temas-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .video-section {
+    min-height: 50vh;
+  }
+
+  .tema-card {
+    height: 220px;
+  }
+}/* ==== RESPONSIVE PARA FOOTER ==== */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .footer-logos {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer-logos {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    max-height: 50px;
+  }
+  
+  .footer-info h4::after,
+  .footer-links h4::after,
+  .footer-developers h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* CORRECCIÓN: Cambiar flex-direction a column */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* CORRECCIÓN: Mantener los items en fila pero dentro de la columna */
+  .contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logos {
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .footer-logo {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .footer-info h4,
+  .footer-links h4,
+  .footer-developers h4 {
+    font-size: 1.1rem;
+  }
+  
+  /* CORRECCIÓN: Asegurar que en móviles pequeños también sea columna */
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .social-links {
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .social-link i {
+    font-size: 0.9rem;
+  }
+}
