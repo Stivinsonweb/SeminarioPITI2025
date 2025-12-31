@@ -246,5 +246,3 @@ Con el apoyo de:
 <p align="center">
   <sub>Evento: 30 al 31 de octubre 2025</sub>
 </p>
-=======
-# SeminarioPITI2025
