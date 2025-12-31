@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌐 Seminario PITI 2025 - Semana de la Ciencia
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -245,3 +246,6 @@ Con el apoyo de:
 <p align="center">
   <sub>Evento: 30 al 31 de octubre 2025</sub>
 </p>
+=======
+# SeminarioPITI2025
+>>>>>>> f7c1dec85ef3ebcd7982b5e238de6521441f170f
