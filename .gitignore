@@ -33,6 +33,12 @@ src/uploads/*.gif
 !src/uploads/.gitkeep
 !src/uploads/libs/
 
+# Video files
+src/assets/video/*.mp4
+src/assets/video/*.avi
+src/assets/video/*.mov
+src/assets/video/*.wmv
+
 # Temporary files
 *.tmp
 *.temp
